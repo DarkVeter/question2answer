@@ -34,7 +34,7 @@ require_once QA_INCLUDE_DIR . 'app/q-list.php';
 if (QA_ALLOW_UNINDEXED_QUERIES)
 	$categoryslugs = qa_request_parts(1);
 else
-	$categoryslugs = null;
+	$categoryslugs = array();
 
 $countslugs = @count($categoryslugs);
 $by = qa_get('by');
